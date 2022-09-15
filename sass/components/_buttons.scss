@@ -1,0 +1,98 @@
+.title-button {
+    background-color: var(--accent-color);
+    padding: 10px 32px;
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--light-font-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button-name {
+    padding: 6px 22px;
+    display: inline-block;
+    text-align: center;
+    font-family: inherit;
+    min-width: 73px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    color: var(--main-font-color);
+    background-color: var(--bgd-secondary-color);
+    transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func),
+        box-shadow var(--transition-dur-and-func);
+}
+
+.buttons-list {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-name:hover,
+.button-name:focus {
+    background-color: var(--accent-color);
+    color: var(--light-font-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.modal-close-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    padding: 0;
+    transition: fill var(--transition-dur-and-func);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    fill: var(--accent-color);
+}
+
+.footer-btn-subscribe {
+    width: 200px;
+    height: 50px;
+    padding: 10px 62px 10px 28px;
+    background-color: var(--bg-footer-icon);
+    color: var(--light-font-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    margin-left: 12px;
+    transition: background-color var(--transition-dur-and-func);
+}
+
+.footer-btn-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--bgd-light-color);
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+
+.footer-btn-subscribe:hover,
+.footer-btn-subscribe:focus {
+    background-color: var(--accent-color);
+}
