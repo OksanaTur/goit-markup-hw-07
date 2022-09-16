@@ -1,26 +1,20 @@
-.img-section {
+.display-section {
     padding-top: 0;
 }
 
-.team-section {
-    background-color: var(--bgd-secondary-color);
-}
-
-.images-list {
+.display-list {
     display: flex;
     gap: 30px;
 }
 
-.images-item {
-    flex-basis: calc((100%-60px)/3);
+.display-list__item {
+    flex-basis: calc((100% - 60px) / 3);
     position: relative;
 }
 
-.images-item-overlay {
+.display-list__item_overlay {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align;
     color: var(--light-font-color);
     background-color: rgba(47, 48, 58, 0.8);
     bottom: 0;
